@@ -1,0 +1,37 @@
+{
+  "district": "Downtown Denver",
+  "aoi": "Union Station + CBD + Civic Center + Auraria (tall buildings)",
+  "neighborhoods": [
+    "Auraria",
+    "CBD",
+    "Civic Center",
+    "Union Station"
+  ],
+  "crs": "EPSG:4326",
+  "building_count": 341,
+  "bbox": [
+    -105.01588322499998,
+    39.72920001800003,
+    -104.98756979999996,
+    39.75932725200005
+  ],
+  "center": [
+    -105.00172651249997,
+    39.74426363500004
+  ],
+  "height_field": "Height",
+  "height_units_note": "meters",
+  "height_min": 20.0,
+  "height_max": 222.06,
+  "height_mean": 43.750205278592375,
+  "filter_note": "Core neighborhoods only; Height >= 20 m",
+  "layers": {
+    "boundary": "union_station_neighborhood.geojson",
+    "neighborhoods": "downtown_neighborhoods.geojson",
+    "buildings": "buildings.geojson",
+    "roads": "roads.geojson",
+    "water": "water.geojson",
+    "parks": "parks.geojson",
+    "transit": "transit.geojson"
+  }
+}

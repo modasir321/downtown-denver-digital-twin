@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "mapbox-gl/dist/mapbox-gl.css";
+
+:root {
+  --background: #0b1220;
+  --foreground: #e8eef7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+#twin-map,
+.mapboxgl-map {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mapboxgl-canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib {
+  opacity: 0.7;
+}
+
+/* Audit: separate branding from controls — breathing room bottom-left */
+.mapboxgl-ctrl-bottom-left {
+  margin-bottom: 12px !important;
+  margin-left: 10px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mapboxgl-ctrl-logo {
+  margin: 0 0 4px 0 !important;
+}
+
+.mapboxgl-ctrl-attrib {
+  margin-top: 0 !important;
+  padding: 2px 6px !important;
+}
+
+/* Keep nav away from Map/Globe toggle */
+.mapboxgl-ctrl-top-right {
+  margin-top: 4.75rem !important;
+  margin-right: 12px !important;
+}
+
+/* Cesium credits — clear of sidebar / Start Tour */
+.cesium-viewer-bottom {
+  bottom: 12px !important;
+  left: 12px !important;
+  right: auto !important;
+  max-width: 42%;
+  opacity: 0.75;
+}
