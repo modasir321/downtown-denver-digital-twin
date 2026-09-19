@@ -30,6 +30,18 @@ npm run dev
 
 Open http://localhost:3000
 
+## Deploy on Vercel
+
+The Next.js app lives in **`web/`**. In the Vercel project:
+
+1. **Root Directory** = `web`
+2. Add env vars:
+   - `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN`
+   - `NEXT_PUBLIC_CESIUM_ION_TOKEN` (optional)
+3. Redeploy after changing Root Directory or env vars
+
+Production: https://downtown-denver-digital-twin.vercel.app
+
 ## Data flow
 
 1. Raw sources live in `data/raw/`
