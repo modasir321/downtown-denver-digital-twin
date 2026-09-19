@@ -34,3 +34,6 @@ yarn-debug.log*
 
 # Nested git (single repo at root)
 web/.git/
+
+!.env.example
+!web/.env.example
